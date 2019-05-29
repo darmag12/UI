@@ -1,0 +1,15 @@
+// my mixins start here
+.button(@width, @height, @btn-bg-color, @btn-font-color, @font-size){
+width: @width;
+height: @height;
+background: @btn-bg-color;
+color: #FFD11C;
+font-size: @font-size;
+transition: all .7s ease-in-out;
+cursor: pointer;
+    &:hover{
+        transform: rotate(360deg);
+        background: lighten(@btn-bg-color, 10%);
+        color: white;
+}
+}
