@@ -135,6 +135,11 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
 nav a {
   margin: 30px 15px auto 10px;
   padding: 10px;
@@ -151,14 +156,50 @@ nav a:hover {
   border: 3px solid;
 }
 nav a:hover:nth-last-child(1) {
-  background-color: #c90d0d;
+  background-color: #f10000;
   color: white;
-  border-radius: 100px;
   border: 0px solid;
   font-size: 1.3rem;
 }
+.footer {
+  background: #00044A;
+  color: white;
+}
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media (max-width: 752px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer h3 {
+  font-size: 1.3rem;
+  font-family: 'quantico', sans-serif;
+  padding: 10px;
+}
+.footer span {
+  font-size: 1.2rem;
+  margin: 20px;
+  font-family: 'quantico', sans-serif;
+}
+.footer address {
+  margin-left: 20px;
+  padding-top: 5px;
+  font-size: 1.2rem;
+  font-family: 'quantico', sans-serif;
+}
+.footer p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'quantico', sans-serif;
+}
 .home-page-container {
-  max-width: 1300px;
+  max-width: 1800px;
 }
 .home-page-container .logo {
   float: left;
@@ -172,13 +213,32 @@ nav a:hover:nth-last-child(1) {
   background-attachment: fixed;
   height: 60vh;
   width: 100%;
+  overflow: hidden;
 }
-.home-page-container .our-mission h1 {
+.home-page-container .our-mission .desktop-view {
   font-size: 2.2rem;
   font-family: 'Bangers', cursive;
   text-align: center;
   padding-top: 30px;
   margin-top: 20px;
+}
+@media (max-width: 600px) {
+  .home-page-container .our-mission .desktop-view {
+    display: none;
+  }
+}
+.home-page-container .our-mission .mobile-view {
+  font-size: 2.2rem;
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 20px;
+  display: none;
+}
+@media (max-width: 600px) {
+  .home-page-container .our-mission .mobile-view {
+    display: block;
+  }
 }
 .home-page-container .our-mission h3 {
   text-align: center;
@@ -188,16 +248,37 @@ nav a:hover:nth-last-child(1) {
   padding: 10px;
   margin: 5px;
 }
-.home-page-container .our-mission p {
+.home-page-container .our-mission .desktop-view-p {
   text-align: center;
   font-size: 1.5rem;
   font-family: 'Kalam', cursive;
   padding-bottom: 10px;
 }
+@media (max-width: 600px) {
+  .home-page-container .our-mission .desktop-view-p {
+    display: none;
+  }
+}
+.home-page-container .our-mission .mobile-view-p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Kalam', cursive;
+  padding-bottom: 10px;
+  display: none;
+}
+@media (max-width: 600px) {
+  .home-page-container .our-mission .mobile-view-p {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+  }
+}
 .home-page-container .our-mission .button {
   display: flex;
   justify-content: center;
   padding: 5px;
+}
+@media (max-width: 600px) {
 }
 .home-page-container .our-mission .button button {
   width: 17vh;
@@ -207,7 +288,7 @@ nav a:hover:nth-last-child(1) {
   font-size: 0.85rem;
   transition: all 0.7s ease-in-out;
   cursor: pointer;
-  font-family: 'Kalam', cursive;
+  font-family: 'quantico', sans-serif;
   padding: 6px;
   border-radius: 90%;
   border: 1px solid #00044A;
@@ -216,4 +297,78 @@ nav a:hover:nth-last-child(1) {
   transform: rotate(360deg);
   background: #00077d;
   color: white;
+}
+.home-page-container h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 900;
+  padding: 10px;
+  font-family: 'quantico', sans-serif;
+  color: whitesmoke;
+}
+.home-page-container .jokes {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.home-page-container .jokes .joke {
+  height: 50vh;
+  width: 50vh;
+  background-image: url(/img/overlay.png), url(/img/art-background-blank-1020317.jpg);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 100% 100%;
+  background-attachment: fixed;
+  border: 1px solid;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .home-page-container .jokes .joke {
+    width: 80%;
+  }
+}
+@media (max-width: 752px) {
+  .home-page-container .jokes .joke {
+    width: 80%;
+  }
+}
+.home-page-container .jokes .joke h3 {
+  font-size: 1.5rem;
+  font-family: 'quantico', sans-serif;
+  padding: 10px;
+}
+.home-page-container .jokes .joke p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  padding: 10px;
+}
+.home-page-container .jokes .joke span {
+  font-size: 1rem;
+  font-family: 'quantico', sans-serif;
+  padding: 10px;
+}
+.home-page-container .jokes .joke button {
+  padding: 5px;
+  border-radius: 5px;
+  background: #00044A;
+  color: #ffd11c;
+  border: 1px solid #00044A;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+.home-page-container .jokes .joke button:hover {
+  transform: translateY(5px);
+  background-color: #000ab0;
+}
+body {
+  font-size: 62.5%;
+  background-image: url(/img/overlay.png), url(/img/4k-wallpaper-architecture-background-1308624.jpg);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 100% 100%;
+  background-attachment: fixed;
 }

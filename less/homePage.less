@@ -1,5 +1,7 @@
+// Home page styles start here
+
 .home-page-container{
-    max-width: 1300px;
+    max-width: 1800px;
 .logo{
     float: left;
     margin: -30px 0px 30px 0px;
@@ -13,14 +15,34 @@
     height: 60vh;
     width: 100%;
     //display: flex;
-    h1{
+    //white-space: nowrap;
+    overflow: hidden;
+    //text-overflow: ellipsis;
+    .desktop-view{
         font-size: @font-size-h1;
         font-family: @font-family-h1;
         text-align: center;
         padding-top: 30px;
         margin-top: 20px;
+        @media @mobile{
+            display: none;
+        }
+        
         
     }
+    .mobile-view{
+
+        font-size: @font-size-h1;
+        font-family: @font-family-h1;
+        text-align: center;
+        padding-top: 30px;
+        margin-top: 20px;
+        display: none;
+        @media @mobile{
+        display: block;
+        }
+    }
+    
     h3{
         text-align: center;
         font-size: 1.9rem;
@@ -30,19 +52,44 @@
         padding: 10px;
         margin: 5px;
     }
-    p{
+    .desktop-view-p{
        text-align: center; 
        font-size: 1.5rem;
        font-family: @font-family-general;
        padding-bottom: 10px;
+       @media @mobile{
+           display: none;
+       }
     }
+    .mobile-view-p{
+        text-align: center; 
+       font-size: 1.5rem;
+       font-family: @font-family-general;
+       padding-bottom: 10px;
+       display: none;
+       @media @mobile{
+           display: block;
+           padding: 10px;
+           margin: 5px;
+       }
+    }
+
     .button{
         display: flex;
         justify-content: center;
         padding: 5px;
+        //text-overflow: ellipsis;
+        @media @mobile{
+            //margin-bottom: -30px;
+            //margin-top: 30px;
+            //padding: 10px;
+            
+        }
+
+        
         button{
             .button(17vh, 17vh, @btn-bg-color, @base-color-yellow, .85rem);
-            font-family: @font-family-general;
+            font-family: @font-family-span-h3-h2;
             padding: 6px;
             border-radius: 90%;
             border: 1px solid @btn-bg-color;
@@ -50,5 +97,84 @@
         } 
     }
 }
+h2{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 900;
+    padding: 10px;
+    font-family: 'quantico', sans-serif;
+    color: whitesmoke;
+}
+.jokes{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    
+
+.joke{
+    height: 50vh;
+    width: 50vh;
+    background-image: url(/img/overlay.png), url(/img/art-background-blank-1020317.jpg);
+    background-repeat: repeat, no-repeat;
+	background-size: auto, 100% 100%;
+	background-attachment: fixed;
+    border: 1px solid;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media @mobile{
+        width: 80%;
+    }
+    @media @tablet{
+        width: 80%;
+    }
+    
+    
+    h3{
+        font-size: 1.5rem;
+        font-family: @font-family-span-h3-h2;
+        //display: flex;
+        //justify-content: center;
+        padding: 10px;
+       // display: none;
+        
+       
+    }
+    p{
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: @font-family-general;
+        padding: 10px;
+       // display: none;
+        
+        
+    }
+    span{
+       font-size: 1rem;
+       font-family: @font-family-span-h3-h2;
+       padding: 10px;
+       //display: none;
+       
+    }
+    button{
+        padding: 5px;
+        border-radius: 5px;
+        background: @btn-bg-color;
+        color: #ffd11c;
+        border: 1px solid @base-color-navy;
+        cursor: pointer;
+        transition: all .4s ease-in;
+        &:hover{
+            transform: translateY(5px);
+            background-color: lighten(@btn-bg-color, 20%);
+        }
+        
+    }
+}
+}
 
 }
+
