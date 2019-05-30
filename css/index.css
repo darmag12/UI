@@ -170,7 +170,12 @@ nav a:hover:nth-last-child(1) {
     text-align: center;
   }
 }
-@media (max-width: 752px) {
+@media (max-width: 790px) {
+  .footer {
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
   .footer {
     text-align: center;
   }
@@ -199,7 +204,7 @@ nav a:hover:nth-last-child(1) {
   font-family: 'quantico', sans-serif;
 }
 .home-page-container {
-  max-width: 1800px;
+  max-width: 1300px;
 }
 .home-page-container .logo {
   float: left;
@@ -248,6 +253,21 @@ nav a:hover:nth-last-child(1) {
   padding: 10px;
   margin: 5px;
 }
+@media (max-width: 600px) {
+  .home-page-container .our-mission h3 {
+    display: none;
+  }
+}
+@media (min-width: 375px) {
+  .home-page-container .our-mission h3 {
+    display: block;
+  }
+}
+@media (max-width: 790px) {
+  .home-page-container .our-mission h3 {
+    display: none;
+  }
+}
 .home-page-container .our-mission .desktop-view-p {
   text-align: center;
   font-size: 1.5rem;
@@ -257,6 +277,11 @@ nav a:hover:nth-last-child(1) {
 @media (max-width: 600px) {
   .home-page-container .our-mission .desktop-view-p {
     display: none;
+  }
+}
+@media (max-width: 790px) {
+  .home-page-container .our-mission .desktop-view-p {
+    padding: 15px;
   }
 }
 .home-page-container .our-mission .mobile-view-p {
@@ -320,6 +345,7 @@ nav a:hover:nth-last-child(1) {
   background-size: auto, 100% 100%;
   background-attachment: fixed;
   border: 1px solid;
+  border-radius: 5px;
   margin: 10px 0px;
   display: flex;
   flex-direction: column;
@@ -331,7 +357,7 @@ nav a:hover:nth-last-child(1) {
     width: 80%;
   }
 }
-@media (max-width: 752px) {
+@media (max-width: 790px) {
   .home-page-container .jokes .joke {
     width: 80%;
   }
@@ -346,6 +372,7 @@ nav a:hover:nth-last-child(1) {
   text-align: center;
   font-family: 'Kalam', cursive;
   padding: 10px;
+  display: none;
 }
 .home-page-container .jokes .joke span {
   font-size: 1rem;

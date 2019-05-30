@@ -1,7 +1,7 @@
 // Home page styles start here
 
 .home-page-container{
-    max-width: 1800px;
+    max-width: 1300px;
 .logo{
     float: left;
     margin: -30px 0px 30px 0px;
@@ -43,6 +43,7 @@
         }
     }
     
+    
     h3{
         text-align: center;
         font-size: 1.9rem;
@@ -51,6 +52,15 @@
         font-weight: bold;
         padding: 10px;
         margin: 5px;
+        @media @mobile{
+            display: none;
+        }
+        @media @mobile-mini{
+            display: block;
+        }
+        @media @tablet{
+            display: none;
+        }
     }
     .desktop-view-p{
        text-align: center; 
@@ -59,6 +69,9 @@
        padding-bottom: 10px;
        @media @mobile{
            display: none;
+       }
+       @media @tablet{
+           padding: 15px;
        }
     }
     .mobile-view-p{
@@ -72,19 +85,21 @@
            padding: 10px;
            margin: 5px;
        }
+       
     }
-
+    
     .button{
         display: flex;
         justify-content: center;
         padding: 5px;
         //text-overflow: ellipsis;
         @media @mobile{
-            //margin-bottom: -30px;
+            //margin-bottom: 10px;
             //margin-top: 30px;
             //padding: 10px;
             
         }
+        
 
         
         button{
@@ -120,6 +135,7 @@ h2{
 	background-size: auto, 100% 100%;
 	background-attachment: fixed;
     border: 1px solid;
+    border-radius: 5px;
     margin: 10px 0px;
     display: flex;
     flex-direction: column;
@@ -131,6 +147,7 @@ h2{
     @media @tablet{
         width: 80%;
     }
+    
     
     
     h3{
@@ -148,9 +165,8 @@ h2{
         text-align: center;
         font-family: @font-family-general;
         padding: 10px;
-       // display: none;
-        
-        
+        display: none;
+          
     }
     span{
        font-size: 1rem;
@@ -170,11 +186,16 @@ h2{
         &:hover{
             transform: translateY(5px);
             background-color: lighten(@btn-bg-color, 20%);
+            
         }
         
+        
     }
+    
 }
 }
 
 }
+
+
 
