@@ -132,35 +132,182 @@ table {
   background-color: #00044A;
   height: 20vh;
 }
-.nav {
+.main-header .nav {
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 600px) {
-  .nav {
+@media (max-width: 1400px) {
+  .main-header .nav .home-a {
+    margin: 30px 15px auto 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+    transition: all 0.7s ease-in-out;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+  .main-header .nav .home-a:hover {
+    transition: all 0.4s ease-in-out;
+    background-color: yellow;
+    color: #00044A;
+    border: 3px solid;
+  }
+  .main-header .nav .home-a:hover:nth-child(4) {
+    background-color: #f10000;
+    color: white;
+    border: 0px solid;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1400px) and (max-width: 600px) {
+  .main-header .nav .home-a {
     display: none;
   }
 }
-.nav .home-a {
-  margin: 30px 15px auto 10px;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  font-family: 'Concert One', cursive;
-  transition: all 0.7s ease-in-out;
-  font-size: 1.1rem;
+@media (max-width: 1400px) and (max-width: 790px) {
+  .main-header .nav .home-a {
+    display: none;
+  }
 }
-.nav .home-a:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: yellow;
-  color: #00044A;
-  border: 3px solid;
+@media (max-width: 1400px) and (max-width: 375px) {
+  .main-header .nav .home-a {
+    display: none;
+  }
 }
-.nav .home-a:hover:nth-last-child(1) {
-  background-color: #f10000;
-  color: white;
-  border: 0px solid;
-  font-size: 1.3rem;
+@media (max-width: 1400px) {
+  .main-header .nav .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 790px) {
+  .main-header .nav .hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffd11c;
+    width: 8vh;
+    height: 5vh;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  .main-header .nav .hamburger-menu:hover {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1400px) {
+  .main-header .toggle-menu {
+    display: none;
+  }
+  .main-header .toggle-menu .menu {
+    display: none;
+  }
+  .main-header .toggle-menu .menu .a {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .main-header .toggle-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+  .main-header .toggle-menu .menu {
+    display: flex;
+    background: black;
+    flex-flow: column nowrap;
+  }
+  .main-header .toggle-menu .menu .a {
+    display: block;
+    font-size: 1.3rem;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Concert One', cursive;
+    display: none;
+  }
+  .main-header .toggle-menu .menu .a:hover {
+    background: #ffd11c;
+    color: #00044A;
+  }
+}
+@media (max-width: 790px) {
+  .main-header .toggle-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+  .main-header .toggle-menu .menu {
+    display: flex;
+    background: black;
+    flex-flow: column nowrap;
+  }
+  .main-header .toggle-menu .menu .a {
+    display: block;
+    font-size: 1.3rem;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Concert One', cursive;
+    display: none;
+  }
+  .main-header .toggle-menu .menu .a:hover {
+    background: #ffd11c;
+    color: #00044A;
+  }
+}
+@media (max-width: 900px) {
+  .main-header .toggle-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+  .main-header .toggle-menu .menu {
+    display: flex;
+    background: black;
+    flex-flow: column nowrap;
+  }
+  .main-header .toggle-menu .menu .a {
+    display: block;
+    font-size: 1.3rem;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Concert One', cursive;
+    display: none;
+  }
+  .main-header .toggle-menu .menu .a:hover {
+    background: #ffd11c;
+    color: #00044A;
+  }
+}
+@media (max-width: 375px) {
+  .main-header .toggle-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+  .main-header .toggle-menu .menu {
+    display: flex;
+    background: black;
+    flex-flow: column nowrap;
+  }
+  .main-header .toggle-menu .menu .a {
+    display: block;
+    font-size: 1.3rem;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Concert One', cursive;
+    display: none;
+  }
+  .main-header .toggle-menu .menu .a:hover {
+    background: #ffd11c;
+    color: #00044A;
+  }
 }
 .footer {
   width: 100%;
@@ -266,7 +413,7 @@ table {
     display: none;
   }
 }
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .home-page-container .our-mission h3 {
     display: block;
   }
@@ -538,11 +685,6 @@ table {
   .about-container .section p {
     text-align: center;
   }
-}
-.about-container .hamburger-menu {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #ffd11c;
 }
 body {
   font-size: 62.5%;

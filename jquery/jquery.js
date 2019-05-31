@@ -43,4 +43,11 @@ $(document).ready(function(){
     });
     
 });
+$('.hamburger-menu').click(function(){
+  $('.menu a').toggle(500, function(){
+    //$('.menu a').fadeIn();
+  });
+  
+});
+
 });

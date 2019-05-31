@@ -3,14 +3,16 @@
 .main-header{
 background-color: @base-color-navy;
 height: 20vh;
-}
+
 .nav{
     display: flex;
     justify-content: flex-end;
-    @media @mobile{
-        display: none;
-    }
+    
+    
+    
+    
      .home-a{
+         @media @desktop{
         margin: 30px 15px auto 10px;
         padding: 10px;
         color: white;
@@ -18,18 +20,195 @@ height: 20vh;
         font-family: 'Concert One', cursive;
         transition: all .7s ease-in-out;
         font-size: 1.1rem;
+        text-transform: uppercase;
+        @media @mobile{
+            display: none;
+        }
+        @media @tablet{
+            display: none;
+        }
+        @media @mobile-mini{
+            display: none;
+        }
+        
+       
         &:hover{
             transition: all .4s ease-in-out;
             background-color: yellow;
             color: @base-color-navy;
             border: 3px solid;
-            &:nth-last-child(1){
+            &:nth-child(4){
                 background-color: rgb(241, 0, 0);
                 color: white;
                 border: 0px solid;
                 font-size: 1.3rem;
             }
         }
+    }
         
     }
+    .hamburger-menu{
+        @media @desktop{
+            display: none;
+        }
+        @media @tablet{
+
+        
+        display: flex;
+        justify-content: flex-end;
+        background-color: #ffd11c;
+        width: 8vh;
+        height: 5vh;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        &:hover{
+            transform: rotate(360deg);
+
+
+        }
+    }
+    
+        
+
+        
+    }
+}
+    
+////////////////////////////hamburger menu////////////////
+@media @desktop{
+   .toggle-menu{
+       display: none;
+       .menu{
+           display: none;
+           .a{
+               display: none;
+           }
+       }
+   } 
+}
+
+
+@media @mobile{
+
+.toggle-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    //display: inline-block;
+    .menu{
+        display: flex;
+        background: black;
+        flex-flow: column nowrap;
+        .a{
+            display: block;
+            font-size: 1.3rem;
+            margin: 10px;
+            padding: 5px;
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: @font-family-nav;
+            display: none;
+            &:hover{
+                background: #ffd11c;
+                color: @base-color-navy;
+            }
+           
+        }
+    }
+}
+
+}
+@media @tablet{
+
+    .toggle-menu{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 auto;
+        //display: inline-block;
+        .menu{
+            display: flex;
+            background: black;
+            flex-flow: column nowrap;
+            .a{
+                display: block;
+                font-size: 1.3rem;
+                margin: 10px;
+                padding: 5px;
+                text-decoration: none;
+                color: whitesmoke;
+                font-family: @font-family-nav;
+                display: none;
+                &:hover{
+                    background: #ffd11c;
+                    color: @base-color-navy;
+                }
+               
+            }
+        }
+    }
+    
+    }
+
+    @media @tablet-pro{
+
+        .toggle-menu{
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 auto;
+            //display: inline-block;
+            .menu{
+                display: flex;
+                background: black;
+                flex-flow: column nowrap;
+                .a{
+                    display: block;
+                    font-size: 1.3rem;
+                    margin: 10px;
+                    padding: 5px;
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-family: @font-family-nav;
+                    display: none;
+                    &:hover{
+                        background: #ffd11c;
+                        color: @base-color-navy;
+                    }
+                   
+                }
+            }
+        }
+        
+        }
+//////// media query for mobile mini//////
+        @media @mobile-mini{
+
+            .toggle-menu{
+                display: flex;
+                justify-content: flex-end;
+                margin: 0 auto;
+                //display: inline-block;
+                .menu{
+                    display: flex;
+                    background: black;
+                    flex-flow: column nowrap;
+                    .a{
+                        display: block;
+                        font-size: 1.3rem;
+                        margin: 10px;
+                        padding: 5px;
+                        text-decoration: none;
+                        color: whitesmoke;
+                        font-family: @font-family-nav;
+                        display: none;
+                        &:hover{
+                            background: #ffd11c;
+                            color: @base-color-navy;
+                        }
+                       
+                    }
+                }
+            }
+            
+            }
+
 }
