@@ -1,0 +1,126 @@
+// about page styles start here
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.about-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    .logo-about{
+        margin-bottom: -110px;
+    }
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    padding: 60px;
+    background-image: url(/img/overlay.png), url(/img/art-background-blank-1020317.jpg);
+    background-repeat: repeat, no-repeat;
+	background-size: auto, 100% 100%;
+	background-attachment: fixed;
+    h1{
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        color: black;
+        font-size: 1.9rem;
+        font-family: @font-family-span-h3-h2;
+        @media @mobile{
+            text-align: center;
+        }
+        @media @tablet{
+            text-align: center;
+        }
+
+    }
+    .border{
+        display: block;
+        margin: auto;
+        width: 160px;
+        height: 3px;
+        background: @base-color-navy;
+        margin-bottom: 40px;
+    }
+    .pictures{
+        margin-bottom: 40px;
+        a{
+            display: inline-block;
+            margin: 0 30px;
+            width: 160px;
+            height: 160px;
+            overflow: hidden;
+            border-radius: 50%;
+            @media @mobile{
+                text-align: center;
+            }
+            @media @tablet{
+                text-align: center;
+            }
+            img{
+                width: 100%;
+                filter: grayscale(100%);
+                transition: all .5s;
+                &:hover{
+                    filter: none;
+                }
+                @media @mobile{
+                    text-align: center;
+                }
+                @media @tablet{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.section{
+    width: 60%;
+    margin: auto;
+    font-size: 1.3rem;
+    color: @base-color-navy;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+    &:target{
+        height: auto;
+    }
+    @media @mobile{
+        text-align: center;
+    }
+    @media @tablet{
+        text-align: center;
+    }
+    .name{
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-family: @font-family-span-h3-h2;
+        @media @mobile{
+            text-align: center;
+        }
+        @media @tablet{
+            text-align: center;
+        }
+    }
+    
+    p{
+        font-family: @font-family-general;
+        font-size: 1.3rem;
+        @media @mobile{
+            text-align: center;
+        }
+        @media @tablet{
+            text-align: center;
+        }
+    }
+    
+}
+
+} // end of about container
+    
+   
+    
+   
+
+

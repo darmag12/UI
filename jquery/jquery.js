@@ -29,4 +29,18 @@ $(document).ready(function(){
         });
         
     });
+
+    $('.view-joke5').click(function(){
+      $('.joke-open5').toggle(500, function(){
+        //$('.view-joke5').fadeIn();
+      });
+      
+  });
+
+  $('.view-joke6').click(function(){
+    $('.joke-open6').toggle(500, function(){
+      //$('.view-joke6').fadeIn();
+    });
+    
+});
 });
