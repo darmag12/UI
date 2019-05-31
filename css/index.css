@@ -175,7 +175,24 @@ table {
     display: none;
   }
 }
+@media (max-width: 1400px) and (max-width: 1900px) {
+  .main-header .nav .home-a {
+    margin: 30px 15px auto 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+    transition: all 0.7s ease-in-out;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+}
 @media (max-width: 1400px) {
+  .main-header .nav .hamburger-menu {
+    display: none;
+  }
+}
+@media (max-width: 1900px) {
   .main-header .nav .hamburger-menu {
     display: none;
   }
@@ -195,6 +212,17 @@ table {
   }
 }
 @media (max-width: 1400px) {
+  .main-header .toggle-menu {
+    display: none;
+  }
+  .main-header .toggle-menu .menu {
+    display: none;
+  }
+  .main-header .toggle-menu .menu .a {
+    display: none;
+  }
+}
+@media (max-width: 1900px) {
   .main-header .toggle-menu {
     display: none;
   }
@@ -355,10 +383,12 @@ table {
 .home-page-container {
   max-width: 1000px;
   margin: 0 auto;
+  width: 100%;
 }
 @media (max-width: 1400px) {
   .home-page-container {
     max-width: 1300px;
+    width: 100%;
   }
 }
 .home-page-container .logo {
